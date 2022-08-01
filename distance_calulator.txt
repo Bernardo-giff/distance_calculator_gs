@@ -1,0 +1,12 @@
+function GOOGLEMAPS(start_adress, end_adress) {
+  //start_adress = "Graz, Austria";
+  //end_adress = "Hausmannstätten, Austria";
+  
+  var mapobj = Maps.newDirectionFinder();
+  mapobj.setOrigin(start_adress)
+  mapobj.setDestination(end_adress)
+  var directions = mapobj.getDirections();
+  
+  var distance = directions["routes"][0]["legs"][0]["distance"]["value"];
+  return distance
+}
