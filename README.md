@@ -1,4 +1,4 @@
-# distance_calculator_gs
+# Distance calculator in Google sheets
 Distance calculator in google sheets
 Just call the function "GOOGLEMAPS()" passing two arguments, start_address and end_address. Both arguments should be strings
 
